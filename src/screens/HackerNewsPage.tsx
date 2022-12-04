@@ -73,14 +73,14 @@ export const HackerNewsPage = () => {
 
     useEffect(() => {
         if (isSuccessed) {
-            if (data.length === 1) { //topstroies
+            if (data.length === 1) { // result of topstroies IDs with TOP_STORIES_URL endpoint.
                 const storyIDs = data[0]
                 if (storyIDs.length > 100) {
                     setTopStoryIDs(storyIDs?.slice(0, 100))
                     getNextStories(20, storyIDs)
                 }
             }
-            if (data.length > 1) {
+            if (data.length > 1) { // result of topstories data with getStoryURL
                 sethackerStoryData([...hackerStoryData, ...data])
             }
         }
