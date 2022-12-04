@@ -1,7 +1,7 @@
 
 # Frontend Test Assignment (HackerNews)
 
-The purpose of this assignment is to help evaluate my React and front-end development skills.
+The task is to show Top 100 hackernews with React + Typescript.
 
 
 ## Requirement
